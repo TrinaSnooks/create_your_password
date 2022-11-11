@@ -8,27 +8,28 @@
 // strings act like an array??
 // use Math.Random ()  - randomize password
 
+/*
 function generatePassword() {
-    var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    /* var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     var lowercase = "abcdefghijklmnopqrstuvwxyz";
     var number = "1234567890";
     var special = "!@#$%^&*";
 
     var finalPassword = "";
+    */
 
     var passwordLength = 
-        prompt ("How many characters should your password be?", "Select 8 to 128 characters");
-   
-          if (passwordLength <8 || passwordLength > 128) {
-          alert("Invalid password length. Please select again");
+        prompt("How many characters should your password be?", "Select 8 to 128 characters");
+          if (passwordLength <8 || passwordLength > 128) 
+          alert("Invalid password length. Please select again");         
           
-          return;           
-          }
 
     // show password length in console
     console.log(passwordLength);
-      
+//}
 
+
+/*
     //ask user for Character types.  All boolean questions
     // declaration of character variables 
     var isUppercase = confirm("Uppercase?"); 
@@ -48,12 +49,12 @@ function generatePassword() {
          if (isUppercase) {
           finalPassword += uppercase;
          
-            userSelection.push(upperCase);
-          } 
+            //userSelection.push(upperCase);
+          //} 
           
          }
 
-         if(isLowercase) {
+         if (isLowercase) {
           finalPassword += lowercase;
          }
 
@@ -61,7 +62,7 @@ function generatePassword() {
           finalPassword += number;
          }
 
-         if(isSpecial) {
+         if (isSpecial) {
           finalPassword += special;
          }
 
@@ -69,9 +70,9 @@ function generatePassword() {
 
 //loop    look at      https://www.programiz.com/javascript/examples/generate-random-strings
 
-
-}
-
+*/
+//}
+/*
 generatePassword ();
 
 
@@ -89,3 +90,4 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+*/
