@@ -48,3 +48,5 @@ References
  https://www.programiz.com/javascript/examples/generate-random-strings
  https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_0_10
  https://stackoverflow.com/questions/65740646/random-password-generator-validation
+
+  Code checking from Kevin Fang

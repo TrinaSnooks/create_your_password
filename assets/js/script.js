@@ -72,11 +72,32 @@ var special = "!@#$%^&*()";
     //userSelection = userSelection.concat(special);
     
    }
+
+   for (var i = 0; i < passwordLength ; i++) {
+
+    var randomIndex = Math.floor(Math.random() * finalPassword.length);
+    console.log(randomIndex);
+ 
+    var random = finalPassword[randomIndex]; 
     
+    userSelection += random;
+    console.log(random);
+    
+ }
+ 
+ console.log(userSelection);
+ 
+ return userSelection;
+
+}
+    /*
+   console.log(passwordLength);
 
   for (var i = 0; i < passwordLength ; i++) {
     var randomIndex = Math.floor(Math.random() * passwordLength.length);
+    
     var random = userSelection[randomIndex]; 
+
     finalPassword = finalPassword.concat(random)
     console.log(finalPassword);
     }
@@ -85,6 +106,7 @@ var special = "!@#$%^&*()";
 
 //console.log(finalPassword);
 //console.log(random);
+*/
 
 
 // Assignment Code
