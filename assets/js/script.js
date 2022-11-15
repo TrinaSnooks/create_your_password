@@ -1,16 +1,26 @@
   
-  //ask for password length from user
+//criteria - 8 -128 characters -- number  ---DONE
+// prompt for number. alert if under 8, above 128  ---DONE
+//upper, lower, number, spec   -- boolean  --DONE
+// confirm - ok/cancel  -- DONE
+//return password in box
+//use a LOOP  - add a random character out of chosen criteria for final password
+// loop will run the number of times the user selected for length -- 
+// strings act like an array??
+// use Math.Random ()  - randomize password
 
-  var uppercase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-  var lowercase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-  var number = ["1","2","3","4","5","6","7","8","9","0"];
-  var special = ["!","@","#","$","%","^","&","*","'"];
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
+var number = "1234567890";
+var special = "!@#$%^&*()";
 
+  // function to ask user for criteria - length and character types
   function generatePassword() {
 
   var userSelection = ""; 
   var finalPassword = "";
 
+  //ask for password length from user
   var passwordLength = 
       prompt("How many characters should your password be?", "Select 8 to 128 characters");
         if (passwordLength <8 || passwordLength > 128) 
@@ -65,13 +75,15 @@
     
 
   for (var i = 0; i < passwordLength ; i++) {
-    var randomIndex = Math.floor(Math.random() * .length);
+    var randomIndex = Math.floor(Math.random() * passwordLength.length);
     var random = userSelection[randomIndex]; 
     finalPassword = finalPassword.concat(random)
+    console.log(finalPassword);
     }
-  }
+  //}
   //console.log(userSelection);
-console.log(finalPassword);
+
+//console.log(finalPassword);
 //console.log(random);
 
 
@@ -79,15 +91,15 @@ console.log(finalPassword);
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
+// writePassword Function
+
 function writePassword() {
-var password = generatePassword();
-var passwordText = document.querySelector("#password");
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
 
-//passwordText.value = password;
+  passwordText.value = password;
 
-
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-}
