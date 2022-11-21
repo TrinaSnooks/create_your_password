@@ -1,10 +1,7 @@
 # 03 JavaScript: Password Generator
+https://github.com/TrinaSnooks/create_your_password
 
-## Your Task
 
-This week's Challenge requires you to modify starter code to create an application that enables employees to generate random passwords based on criteria that they’ve selected. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
-
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
 
 ## User Story
 
@@ -34,19 +31,36 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-## Mock-Up
+## Usage
 
-The following image shows the web application's appearance and functionality:
+The purpose of project is to develop a website to generate a password based on the user criteria which is indicated with a prompt, confirm and alert messages.
 
-![The Password Generator application displays a red button to "Generate Password".](./Assets/03-javascript-homework-demo.png)
+Screenshots of website:
+
+   
+![screenshot 1](assets/images/website-1.png)
+![screenshot 2](assets/images/website-2.png)
+![screenshot 3](assets/images/website-2.png)
+
+## Features
+
+- Request password button
+- Alert, Prompt, Confirm messages
+- Display password section of page
 
 
+## Credits
+
+Credits go to UNB Coding Bootcamp and the coding skills they have been teaching.
+Code review by Kevin Fang.
 
 
-References
+## References
 
  https://www.programiz.com/javascript/examples/generate-random-strings
- https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_0_10
- https://stackoverflow.com/questions/65740646/random-password-generator-validation
 
-  Code checking from Kevin Fang
+ https://www.w3schools.com/js/tryit.asp?filename=tryjs_random_0_10
+
+ https://stackoverflow.com/questions/65740646/random-password-generator-validation
+ 
+
