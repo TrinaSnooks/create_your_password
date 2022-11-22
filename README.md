@@ -1,5 +1,7 @@
 # 03 JavaScript: Password Generator
-https://github.com/TrinaSnooks/create_your_password
+
+
+https://trinasnooks.github.io/create_your_password/
 
 
 
